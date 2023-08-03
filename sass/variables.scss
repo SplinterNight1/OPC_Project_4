@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Shrikhand&display=swap');
+:export {
+    $--primary: #9356dc;
+    $--secondary: #ff79da;
+    $--tertiary: #99e2d0;
+    $--darkgray: darkgray;
+    $--dimgray: dimgray;
+    $--lightgray: lightgray;
+    $ultralightgray: #EAEAEA;
+    $--gray-primary: #F6F6F6;
+    $--lightpurple: #F5EDFF;
+    $--lightgreen: #99E2D0;
+    $--green: #2FAF94;
+    $--grayblack: #353535;
+    $--graywhite: #eee;
+    
+    $smartphone: 1199;
+    $desktop: 1200px;
+    
+    $max-width: 1500px;
+
+    
+    .bold {
+        font-weight: bold;
+    }
+    .gray {
+        color: $--dimgray;
+    }
+}
+
