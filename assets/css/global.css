@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Shrikhand&display=swap");
 :export .bold {
   font-weight: bold;
@@ -209,7 +210,7 @@ body .no-style {
 }
 body .description {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   height: 35%;
   padding: 15px;
@@ -243,4 +244,43 @@ body .description {
   border-radius: 1rem 1rem 0 0;
   box-shadow: none;
   object-fit: cover;
+}
+
+.layout {
+  flex: 1;
+}
+
+/*Likes*/
+.svg-container {
+  position: relative;
+  margin-right: 25px;
+}
+
+.btn-heart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+  font-size: 22px;
+}
+
+/* Cacher le deuxième SVG par défaut */
+.btn-heart-solid {
+  opacity: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: -o-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
+  background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
+  background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Au survol du conteneur, faire apparaître le deuxième SVG et masquer le premier */
+.svg-container:hover .btn-heart {
+  opacity: 0;
+}
+
+.svg-container:hover .btn-heart-solid {
+  opacity: 1;
 }
